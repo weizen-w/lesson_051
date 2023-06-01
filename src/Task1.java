@@ -14,7 +14,7 @@ public class Task1 {
   }
 
   public static int getRandomInteger(int maximum, int minimum) {  // O(1)
-    return ((int) (Math.random()*(maximum - minimum))) + minimum; // O(1)
+    return ((int) (Math.random() * (maximum - minimum))) + minimum; // O(1)
   }
 
   public static int getIndexToSmallestEvenNumber(List<Integer> list) {  // O(n)
