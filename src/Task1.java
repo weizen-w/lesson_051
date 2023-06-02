@@ -19,10 +19,8 @@ public class Task1 {
 
   public static int getIndexToSmallestEvenNumber(List<Integer> list) {  // O(n)
     int iTemp = -1;
-    boolean values = false;
     for (int i = 0; i < list.size(); ++i) { // O(n)
-      if (list.get(i) % 2 == 0 && (!values || list.get(i) < list.get(iTemp))) { // O(1)
-        values = true;
+      if (list.get(i) % 2 == 0 && (iTemp == -1 || list.get(i) < list.get(iTemp))) { // O(1)
         iTemp = i;
       }
     }
