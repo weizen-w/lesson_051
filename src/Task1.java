@@ -24,7 +24,7 @@ public class Task1 {
       if (list.get(i) == 2) { // O(1)
         return i;
       }
-      if (list.get(i) <= list.get(iTemp) & list.get(i) % 2 == 0) { // O(1)
+      if (list.get(i) <= list.get(iTemp) && list.get(i) % 2 == 0) { // O(1)
         values = true;
         iTemp = i;
       }
